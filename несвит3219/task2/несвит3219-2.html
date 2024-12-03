@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* div:first-child{
+            margin: auto;
+        } */
+    </style>
+    <script> 
+        let x = 3;
+function recursion(){
+    x++;
+    console.log(x);
+    if (x > 5) {
+        return x;
+}
+    recursion();
+}
+    recursion();
+    3
+
+4
+
+5
+
+6
+function summa(array, sum){
+    sum += array.shift();
+
+    if(array.length !=0){
+        sum = rec(array, sum);
+    }
+
+    return sum;
+}
+
+console.log(rec([1,2,3], 0));
+    </script>
+</body>
+</html>   
